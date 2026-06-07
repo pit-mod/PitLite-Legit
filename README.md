@@ -1,6 +1,6 @@
 # PitLite Legit
 
-Open-source Hypixel Pit client mod for **Minecraft 1.8.9 (Forge)**. Visual and QoL features only — no license key, no obfuscation, no auth or anti-debug checks.
+Open-source Hypixel Pit client mod for **Minecraft 1.8.9 (Forge)**. Visual and QoL features only.
 
 ## Requirements
 

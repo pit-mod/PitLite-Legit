@@ -1,0 +1,94 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+        maven {
+            name = "sponge"
+            url = "https://repo.spongepowered.org/maven"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0"
+group = "com.pitlite"
+archivesBaseName = "PitLite-Legit"
+targetCompatibility = "1.8"
+sourceCompatibility = "1.8"
+compileJava.options.encoding = "UTF-8"
+compileJava.options.compilerArgs += [
+    "-Amixin.checks.remap=false",
+    "-AoutRefMapFile=${buildDir}/mixins.pitlite.refmap.json"
+]
+
+minecraft {
+    version = "1.8.9-11.15.1.2318-1.8.9"
+    runDir = "run"
+    mappings = "stable_22"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "sponge"
+        url = "https://repo.spongepowered.org/maven"
+    }
+}
+
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'org.spongepowered:mixin:0.7.11-SNAPSHOT'
+    compileOnly 'org.spongepowered:spongeapi:4.1.0'
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+jar {
+    from {
+        configurations.embed.collect { zipTree(it) }
+    }
+    manifest {
+        attributes(
+                'FMLCorePlugin': 'com.pitlite.loader.PitLiteMixinLoader',
+                'FMLCorePluginContainsFMLMod': 'true',
+                'ForceLoadAsMod': 'true',
+                'MixinConfigs': 'mixins.pitlite.json'
+        )
+    }
+}

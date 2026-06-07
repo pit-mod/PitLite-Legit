@@ -1,0 +1,20 @@
+{
+    "jumpscare": {
+        "category": "master",
+        "sounds": [
+            {
+                "name": "jumpscare",
+                "stream": true
+            }
+        ]
+    },
+    "freddy_countdown_3": {
+        "category": "master",
+        "sounds": [
+            {
+                "name": "freddy-countdown-3",
+                "stream": true
+            }
+        ]
+    }
+}

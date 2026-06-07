@@ -1,0 +1,2 @@
+rootProject.name = 'PitX'
+include 'src' // Ensure we only include what we need if possible, but normally it's just root.

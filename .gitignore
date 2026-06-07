@@ -1,0 +1,26 @@
+# Gradle / Forge
+.gradle/
+build/
+run/
+out/
+logs/
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local game config (created at runtime)
+config/pitlegit/
+
+# Crash / debug
+crash-reports/
+hs_err_pid*

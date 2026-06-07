@@ -99,6 +99,7 @@ public class NickedList extends Module implements DraggableHud {
 
     public NickedList() {
         super("Nicked List", "Detects and displays nicked players in the lobby.", Category.RENDER);
+        markDangerous();
         instance = this;
         addSetting(showRegion);
         addSetting(showMystics);

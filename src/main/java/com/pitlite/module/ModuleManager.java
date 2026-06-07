@@ -49,7 +49,7 @@ public class ModuleManager {
             case "Players List": d = "Shows KOS and friends in lobby."; break;
             case "Dark List": d = "Shows Dark/Venom players nearby."; break;
             case "Rage List": d = "Shows rage players in lobby."; break;
-            case "Nicked List": d = "Detects and displays nicked players in the lobby."; break;
+            case "Nicked List": d = "Auto denick via Mojang + PitPanda + /view. Ban risk on Hypixel."; break;
             case "TargetHUD": d = "Shows info about your target."; break;
             case "Armor HUD": d = "Shows your armor on screen."; break;
             case "HealthDisplay": d = "Shows your health near crosshair."; break;

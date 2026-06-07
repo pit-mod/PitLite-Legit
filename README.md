@@ -67,7 +67,7 @@ config-example/              Sample runtime config
 
 ## Disclaimer
 
-This mod is provided for educational purposes. Use on Hypixel at your own risk. The authors are not affiliated with Hypixel or Mojang.
+This mod is provided for educational purposes. The authors are not affiliated with Hypixel or Mojang.
 
 ## License
 

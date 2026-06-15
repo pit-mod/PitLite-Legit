@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 @Mod(modid = PitLite.MODID, version = PitLite.VERSION, name = PitLite.NAME)
 public class PitLite {
     public static final String MODID = "pitlegit";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.2";
     public static final String NAME = "PitLite Legit";
 
     public static ModuleManager moduleManager;

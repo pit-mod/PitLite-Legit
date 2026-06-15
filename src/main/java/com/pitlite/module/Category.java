@@ -6,7 +6,9 @@ public enum Category {
 
     PLAYER("Player"),
 
-    MISC("Misc");
+    MISC("Misc"),
+    
+    SWAPPING("Swapping");
 
     public String name;
 

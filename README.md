@@ -35,17 +35,62 @@ Output: `build/libs/PitLite-Legit-1.0.jar`
 
 Settings and lists are saved under `config/pitlegit/` (separate from full PitLite).
 
-## Modules (24)
+## Modules (31)
 
-**Lobby & lists:** Players List, Dark List, Rage List, Nicked List
+### Render — Lobby & lists
+| Module | Description |
+|--------|-------------|
+| **Players List** | KOS, friends and truce in lobby with distance, direction, and which region they are in |
+| **Dark List** | List of players wearing Dark / Venom pants |
+| **Rage List** | List of players wearing Rage pants |
+| **Nicked List** | Detects and displays nicked players (auto denick) |
 
-**HUD:** TargetHUD, Armor HUD, HealthDisplay, HUD, Player, Fps, FullBright
+### Render — HUD & overlays
+| Module | Description |
+|--------|-------------|
+| **TargetHUD** | Info about your current target |
+| **Armor HUD** | Renders your armor on the screen |
+| **HealthDisplay** | HP near the crosshair |
+| **HUD** | Enabled modules list on screen |
+| **Player** | Lobby player count |
+| **Fps** | Current FPS |
+| **FullBright** | Client-side max brightness |
 
-**Timers:** VenomTimer, DrainTimer, PinTimer, Events
+### Render — Timers & events
+| Module | Description |
+|--------|-------------|
+| **VenomTimer** | Venom cooldown timer |
+| **DrainTimer** | Sprint drain countdown on players |
+| **PinTimer** | Pin duration above pinned players |
+| **Events** | Shows upcoming Pit events |
 
-**Utilities:** Mystic Rename, Low Lives Warning, Click to View, Owner History, AutoMath
+### Player — Utilities
+| Module | Description |
+|--------|-------------|
+| **Mystic Rename** | Client-side mystic renamer (enchants) |
+| **Low Lives Warning** | Highlights low-life mystics; alerts on pickup |
+| **Click to View** | Click chat names to run `/view` |
+| **Owner History** | Middle-click mystics for owner history |
+| **AutoMath** | Solves Quick Maths and prints the answer (never auto-submits) |
+| **AutoReconnect** | Reconnect on disconnect |
+| **AutoSpawn** | Automatically runs `/spawn` |
 
-**Misc:** AutoReconnect, AutoSpawn, Discord Rich Presence, Stop Your Addiction
+### Swapping
+| Module | Description |
+|--------|-------------|
+| **PantSwapper** <span style="color:red">**[RISKY]**</span> | Automatically swaps pants and optionally boots in inventory |
+| **AutoPod** <span style="color:red">**[RISKY]**</span> | Auto swaps Escape Pod pants |
+| **PhoenixSwap** <span style="color:red">**[RISKY]**</span> | Manual Phoenix swap with auto-restore when healthy |
+| **BulletTimeSwap** <span style="color:red">**[RISKY]**</span> | Swaps to Bullet Time sword to block incoming arrows |
+| **DarkSwap** <span style="color:red">**[RISKY]**</span> | Advanced swapping with inventory support and intelligent slot selection |
+| **AntiVenom** <span style="color:red">**[RISKY]**</span> | Auto swaps to Dark Pants when hit by Venom |
+| **MLBSwap** <span style="color:red">**[RISKY]**</span> | Swaps to Mega Longbow, shoots, and swaps back |
+
+### Misc
+| Module | Description |
+|--------|-------------|
+| **Discord Rich Presence** | Shows "Playing Hypixel Pit" on Discord |
+| **Stop Your Addiction** | Permanent Pit intervention. Requires acceptance phrase. |
 
 ### AutoMath
 

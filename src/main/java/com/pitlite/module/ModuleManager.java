@@ -36,6 +36,14 @@ public class ModuleManager {
         addModule(new com.pitlite.module.impl.player.AutoSpawn());
         addModule(new com.pitlite.module.impl.misc.DiscordRichPresence());
         addModule(new com.pitlite.module.impl.player.StopYourAddiction());
+        
+        addModule(new com.pitlite.module.impl.swapping.PantSwapper());
+        addModule(new com.pitlite.module.impl.swapping.AutoPod());
+        addModule(new com.pitlite.module.impl.swapping.PhoenixSwap());
+        addModule(new com.pitlite.module.impl.swapping.BulletTimeSwap());
+        addModule(new com.pitlite.module.impl.swapping.DarkSwap());
+        addModule(new com.pitlite.module.impl.swapping.AntiVenom());
+        addModule(new com.pitlite.module.impl.swapping.MLBSwap());
     }
 
     public void addModule(Module module) {
@@ -70,6 +78,13 @@ public class ModuleManager {
             case "AutoSpawn": d = "Auto runs /spawn command."; break;
             case "Discord Rich Presence": d = "Shows Playing Hypixel Pit on Discord."; break;
             case "Stop Your Addiction": d = "Permanent Pit intervention. Requires acceptance phrase."; break;
+            case "PantSwapper": d = "Automatically swaps pants and optionally boots in inventory."; break;
+            case "AutoPod": d = "Auto swaps Escape Pod pants."; break;
+            case "PhoenixSwap": d = "Manual Phoenix swap with auto-restore when healthy."; break;
+            case "BulletTimeSwap": d = "Swaps to Bullet Time sword to block incoming arrows."; break;
+            case "DarkSwap": d = "Advanced swapping with inventory support and intelligent slot selection."; break;
+            case "AntiVenom": d = "Auto swaps to Dark Pants when hit by Venom."; break;
+            case "MLBSwap": d = "Swaps to Mega Longbow, shoots, and swaps back."; break;
             default: return;
         }
         module.setDescription(d);

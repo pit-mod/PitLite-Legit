@@ -10,7 +10,7 @@ Open-source Hypixel Pit client mod for **Minecraft 1.8.9 (Forge)**. Visual and Q
 ## Install
 
 1. Build the mod (see below) or use a release jar.
-2. Copy `PitLite-Legit-1.0.jar` into your `.minecraft/mods` folder.
+2. Copy `PitLite-Legit-1.2.jar` into your `.minecraft/mods` folder.
 3. Launch Forge 1.8.9.
 
 ## Build from source
@@ -19,7 +19,7 @@ Open-source Hypixel Pit client mod for **Minecraft 1.8.9 (Forge)**. Visual and Q
 gradlew.bat build
 ```
 
-Output: `build/libs/PitLite-Legit-1.0.jar`
+Output: `build/libs/PitLite-Legit-1.2.jar`
 
 ## Controls
 

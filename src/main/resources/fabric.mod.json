@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "pitlegit",
+  "version": "${version}",
+  "name": "PitLite Legit",
+  "description": "Open-source visual and QoL utilities for Hypixel Pit on Minecraft 1.8.9.",
+  "authors": [
+    "kyross_"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "",
+  "environment": "*",
+  "custom": {
+    "firmament:hide_from_modlist": true
+  }
+}

@@ -23,8 +23,12 @@ public class CustomGuiChat extends GuiChat {
     @Override
     public void sendChatMessage(String msg, boolean addToChat) {
         if (msg.startsWith(".")) {
-            if (CommandHandler.handleCommand(msg)) {
-                return;
+            com.pitlite.module.Module commandModule = com.pitlite.PitLite.moduleManager.getModules().stream()
+                    .filter(m -> m.getName().equals("Command")).findFirst().orElse(null);
+            if (commandModule != null && commandModule.isToggled()) {
+                if (CommandHandler.handleCommand(msg)) {
+                    return;
+                }
             }
         }
         if (StopYourAddiction.tryHandleOutgoingChat(msg)) {

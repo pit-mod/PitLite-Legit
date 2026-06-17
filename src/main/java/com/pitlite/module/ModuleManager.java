@@ -31,10 +31,12 @@ public class ModuleManager {
         addModule(new com.pitlite.module.impl.player.ClickToView());
         addModule(new com.pitlite.module.impl.player.OwnerHistory());
         addModule(new com.pitlite.module.impl.player.AutoMath());
+        addModule(new com.pitlite.module.impl.player.ChestStealer());
 
         addModule(new com.pitlite.module.impl.player.AutoReconnect());
         addModule(new com.pitlite.module.impl.player.AutoSpawn());
         addModule(new com.pitlite.module.impl.misc.DiscordRichPresence());
+        addModule(new com.pitlite.module.impl.misc.Command());
         addModule(new com.pitlite.module.impl.player.StopYourAddiction());
         
         addModule(new com.pitlite.module.impl.swapping.PantSwapper());
@@ -85,6 +87,8 @@ public class ModuleManager {
             case "DarkSwap": d = "Advanced swapping with inventory support and intelligent slot selection."; break;
             case "AntiVenom": d = "Auto swaps to Dark Pants when hit by Venom."; break;
             case "MLBSwap": d = "Swaps to Mega Longbow, shoots, and swaps back."; break;
+            case "ChestStealer": d = "Automatically steals items from chests."; break;
+            case "Command": d = "Enables custom client commands starting with '.'."; break;
             default: return;
         }
         module.setDescription(d);
